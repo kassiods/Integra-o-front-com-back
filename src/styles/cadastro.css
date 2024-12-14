@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@200;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100%;
+  padding: 0 10px;
+  background: url("../assets/images/fundo.jpeg") no-repeat center center fixed;
+  background-size: cover; /* Garante que a imagem ocupe a tela inteira */
+  background-attachment: fixed; /* Garante que a imagem de fundo não role com a página */
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.cadastro-container {
+  width: 400px;
+  border-radius: 8px;
+  padding: 30px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5);  /* Fundo semi-transparente para melhorar a legibilidade */
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.cadastro-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.cadastro-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.cadastro-input {
+  position: relative;
+  border-bottom: 2px solid #ccc;
+  margin: 15px 0;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  color: #fff;
+}
+
+.cadastro-input::placeholder {
+  color: #fff;
+  opacity: 0.6;
+}
+
+button {
+  background: #fff;
+  color: #000;
+  font-weight: 600;
+  border: none;
+  padding: 12px 20px;
+  cursor: pointer;
+  border-radius: 3px;
+  font-size: 16px;
+  border: 2px solid transparent;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  color: #fff;
+  border-color: #fff;
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.cadastro-link {
+  color: #efefef;
+  text-decoration: none;
+  margin-top: 20px;
+}
+
+.cadastro-link:hover {
+  text-decoration: underline;
+}
