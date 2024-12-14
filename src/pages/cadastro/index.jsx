@@ -4,6 +4,7 @@ import api from "../../services/api";
 import "../../styles/cadastro.css";
 
 function Cadastro() {
+  console.log('import.meta.env.API_BASE_URL', import.meta.env.VITE_BASE_URL)
   const nameRef = useRef();
   const emailRef = useRef();
   const passwordRef = useRef();
